@@ -31,6 +31,11 @@ const checkingWinner = (arr) => {
     }
     count = 0;
   }
+  if (!result && arr.length === 5) {
+    return "draw";
+  } else if (!result) {
+    return false;
+  }
   return result;
 };
 export default checkingWinner;
